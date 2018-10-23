@@ -50,7 +50,7 @@ return [
 
         'public' => [
             'driver' => 'local',
-            'root' => storage_path('app/public'),
+            'root' => storage_path('app/public/images/products'),
             'url' => env('APP_URL').'/storage',
             'visibility' => 'public',
         ],
@@ -63,6 +63,12 @@ return [
             'bucket' => env('AWS_BUCKET'),
             'url' => env('AWS_URL'),
         ],
+        'images' => [
+            'driver' => 'local',
+            'root' => storage_path('/app/public/images'),
+            'url' => env('APP_URL').'/storage',
+            'visibility' => 'public',
+],
 
     ],
 

@@ -15,19 +15,15 @@
 Route::get('/', function () {
     return view('welcome');
 });
+Route::resource('production','ProdController');
 
-Route::get('hello', function () {
-    $title ='halo!!';
-    $name ='Yehor or Kostya';
-    return view('hello',
-        [
-        'title' =>$title,
-        'name' => $name
-        ]);
-});
-Route::get('/table', function () {
-    $tasks = App\Task::all;
-    return view('table', compact('tasks'));
-});
+
+
+
+
+
+
+
+
 
 
